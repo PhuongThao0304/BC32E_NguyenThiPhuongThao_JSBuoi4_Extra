@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+ 
+    <div class="container">
+        <h1>   BÀI TẬP BUỔI 4 - EXTRA</h1>
+        <!-- Bài 1 -->
+        <div>
+            <h3>Bài 1: Viết chương trình nhập vào ngày, tháng, năm (Giả sử nhập đúng, không cần kiểm tra hợp lệ).
+                Tìm ngày, tháng, năm của ngày tiếp theo. Tương tự tìm ngày tháng năm của ngày trước đó</h3>
+            <div class="form-group">
+                <input type="number" class="form-control w-50" id="date" placeholder="Nhập ngày">
+                <input type="number" class="form-control w-50 my-4" id="month" placeholder="Nhập tháng">
+                <input type="number" class="form-control w-50" id="year" placeholder="Nhập năm">
+                <button class="btn btn-success mt-4" id="btnNext"> Ngày tiếp theo</button>
+                <button class="btn btn-danger mt-4" id="btnBefore"> Ngày trước đó</button>
+                <div class="alert alert-success mt-4" id="nextday"></div>
+                <div class="alert alert-danger" id="daybefore"></div>
+
+
+            </div>
+        </div>
+
+        <hr>
+        <!-- Bài 2 -->
+        <div>
+            <h3>Bài 2: Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao nhiêu ngày. (bao gồm tháng
+                của năm nhuận).</h3>
+
+            <div class="form-group">
+                <input type="number" class="form-control w-50 my-4" id="month2" placeholder="Nhập tháng">
+                <input type="number" class="form-control w-50" id="year2" placeholder="Nhập năm">
+                <button class="btn btn-success mt-4" id="btnTinhNgay"> Số ngày trong tháng</button>
+                <div class="alert alert-success mt-4" id="soNgay"></div>
+
+
+
+            </div>
+        </div>
+        <hr>
+
+        <!-- bài 3 -->
+        <div>
+            <h3> Bài 3: Viết chương trình nhập vào số nguyên có 3 chữ số. In ra cách đọc nó.</h3>
+            <div class="form-group">
+                <input type="number" id="soNguyen" class="form-control w-50"
+                    placeholder="Nhập vào số nguyên có 3 chữ số">
+                <button class="btn btn-success my-4" id="cachDoc">Cách đọc</button>
+            </div>
+            <div class="alert alert-primary" id="ketQua_3"></div>
+        </div>
+
+        <hr>
+        <!-- bài 4 -->
+        <div>
+            <h3>Bài 4: Cho biết tên và tọa độ nhà của 3 sinh viên. Cho biết tọa độ của trường đại học. Viết chương
+                trình in tên sinh viên xa trường nhất.</h3>
+            <div class="form-group">
+                <h4>Sinh viên 1</h4>
+                <div class="row">
+                    <input type="text" id="tenSV1" class="form-control w-25 mr-4" placeholder="Nhập tên sinh viên 1">
+                    <input type="number" id="toaDoxSV1" class="form-control w-25 mr-4" placeholder="Nhập toạ độ x">
+                    <input type="number" id="toaDoySV1" class="form-control w-25" placeholder="Nhập toạ độ y">
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Sinh viên 2</h4>
+                <div class="row">
+                    <input type="text" id="tenSV2" class="form-control w-25 mr-4" placeholder="Nhập tên sinh viên 2">
+                    <input type="number" id="toaDoxSV2" class="form-control w-25 mr-4" placeholder="Nhập toạ độ x">
+                    <input type="number" id="toaDoySV2" class="form-control w-25" placeholder="Nhập toạ độ y">
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Sinh viên 3</h4>
+                <div class="row">
+                    <input type="text" id="tenSV3" class="form-control w-25 mr-4" placeholder="Nhập tên sinh viên 3">
+                    <input type="number" id="toaDoxSV3" class="form-control w-25 mr-4" placeholder="Nhập toạ độ x">
+                    <input type="number" id="toaDoySV3" class="form-control w-25" placeholder="Nhập toạ độ y">
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Trường học</h4>
+                <div class="row">
+                    <input type="number" id="toaDoxTH" class="form-control w-25 mr-4" placeholder="Nhập toạ độ x">
+                    <input type="number" id="toaDoyTH" class="form-control w-25" placeholder="Nhập toạ độ y">
+                </div>
+
+
+
+            </div>
+            <button class="btn btn-success my-4" id="btnKhoangcach">Sinh viên xa trường nhất</button>
+            <div class="alert alert-success" id="ketQua-4"></div>
+
+
+        </div>
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+</body>
+
+</html>
